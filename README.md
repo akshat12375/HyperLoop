@@ -11,7 +11,7 @@
 |------------|-----------------------------|----------|
 | store_301  | manager301@walmart.com       | 1234     |
 
---
+---
 
 ## 🔥 One-Line Summary
 **HyperLoop:** AI-powered surplus redistribution system optimizing Walmart's inventory flow.
