@@ -43,24 +43,43 @@
 8. **Dashboard** — store sees inventory, generated charts, and Eco Credits balance.
 
 
-🔌 Important Endpoints (overview)
-GET /login — login page
-POST /login — authenticate and set session (store_id, region)
-GET /dashboard — store dashboard (inventory, eco credits, charts)
-GET /marketplace — list available surplus items from other stores
-POST /request-transfer — request an item transfer from a store
-GET /active-requests — view incoming requests (for recipient or sender depending impl)
-POST /update-request — Accept/Reject (on Accept: update inventories + award eco credits)
-POST /add-inventory — add new inventory (triggers ML prediction & status setting)
-GET /logout — clear session
+# 🔌 Important Endpoints Overview
 
-🧠 ML Model & Pipeline Details
-Inputs/features used (example):
-region (categorical)
-item_name (categorical)
-day_of_week (categorical)
-quantity_in_stock (numeric)
-price_per_kg (numeric)
-expiry_days (numeric; days until expiry)
-local_event (binary)
-temperature, rainfall (numeric)
+### **Authentication & Session**
+- **GET** `/login` — Login page  
+- **POST** `/login` — Authenticate and set session (`store_id`, `region`)  
+- **GET** `/logout` — Clear session  
+
+---
+
+### **Dashboard & Inventory**
+- **GET** `/dashboard` — Store dashboard (inventory, eco credits, charts)  
+- **POST** `/add-inventory` — Add new inventory *(triggers ML prediction & status setting)*  
+
+---
+
+### **Marketplace & Transfers**
+- **GET** `/marketplace` — List available surplus items from other stores  
+- **POST** `/request-transfer` — Request an item transfer from a store  
+- **GET** `/active-requests` — View incoming requests *(for recipient or sender depending on implementation)*  
+- **POST** `/update-request` — Accept/Reject request  
+  - **On Accept:** Updates inventories + awards eco credits  
+
+---
+
+# 🧠 ML Model & Pipeline Details
+
+### **Input Features**
+| Feature            | Type        | Description |
+|--------------------|-------------|-------------|
+| `region`           | Categorical | Store's geographic region |
+| `item_name`        | Categorical | Name of the inventory item |
+| `day_of_week`      | Categorical | Day when data is recorded |
+| `quantity_in_stock`| Numeric     | Current quantity available |
+| `price_per_kg`     | Numeric     | Price per kilogram |
+| `expiry_days`      | Numeric     | Days until item expires |
+| `local_event`      | Binary      | Whether a local event is happening (0/1) |
+| `temperature`      | Numeric     | Temperature in °C |
+| `rainfall`         | Numeric     | Rainfall in mm |
+
+---
