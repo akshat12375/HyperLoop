@@ -92,7 +92,20 @@
 ---
 ## 📸 Project Demo
 
-Below are screenshots demonstrting the project
+### 🎥 Demo Video  
+Watch the complete walkthrough of the Inter-Disease.AI system:
+
+<p align="center">
+  <a href="https://github.com/akshat12375/HyperLoop/blob/master/hyper_loop_demo_video-.mp4">
+    <img src="https://img.shields.io/badge/Watch%20Demo-Video-blue?style=for-the-badge" alt="Demo Video"/>
+  </a>
+</p>
+
+---
+
+## Demo Images
+
+Below are screenshots demonstrating the Inter-Disease.AI interface and predictions.
 
 <p align="center">
   <img src="1.png" alt="Demo" width="700"/>
