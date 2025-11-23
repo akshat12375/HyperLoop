@@ -90,3 +90,31 @@
 | `rainfall`         | Numeric     | Rainfall in mm |
 
 ---
+## 📸 Project Demo
+
+Below are screenshots demonstrting the project
+
+<p align="center">
+  <img src="1.png" alt="Demo" width="700"/>
+  <br/><br/>
+
+  <img src="2.png" alt="Demo" width="700"/>
+  <br/><br/>
+  <img src="3.png" alt="Demo" width="700"/>
+  <br/><br/>
+  <img src="4.png" alt="Demo" width="700"/>
+  <br/><br/>
+  <img src="5.png" alt="Demo" width="700"/>
+  <br/><br/>
+  <img src="6.png" alt="Demo" width="700"/>
+  <br/><br/>
+  <img src="7.png" alt="Demo" width="700"/>
+  <br/><br/>
+  <img src="8.png" alt="Demo" width="700"/>
+  <br/><br/>
+  <img src="9.png" alt="Demo" width="700"/>
+  <br/><br/>
+  <img src="10.png" alt="Demo" width="700"/>
+  <br/><br/>
+
+</p>
